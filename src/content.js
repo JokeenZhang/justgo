@@ -21,7 +21,10 @@ if (
   url.indexOf("link.zhihu.com") != -1 ||
   url.indexOf("link.juejin.cn") != -1 ||
   url.indexOf("link.csdn.net") != -1  ||
-  url.indexOf("sspai.com/link") != -1
+  //少数派
+  url.indexOf("sspai.com/link") != -1 ||
+  //腾讯云
+  url.indexOf("cloud.tencent.com/developer/tools/blog-entry") != -1
 ) {
   newUrl = decodeURIComponent(getUrlParams("target"));
 } else if (url.indexOf("www.jianshu.com/go-wild") != -1) {
