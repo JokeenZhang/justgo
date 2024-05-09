@@ -27,7 +27,10 @@ if (
   url.indexOf("cloud.tencent.com/developer/tools/blog-entry") != -1
 ) {
   newUrl = decodeURIComponent(getUrlParams("target"));
-} else if (url.indexOf("www.jianshu.com/go-wild") != -1) {
+} else if (url.indexOf("www.jianshu.com/go-wild") != -1 ||
+  //腾讯文档
+  url.indexOf("docs.qq.com/scenario/link.html") != -1 
+) {
   newUrl = decodeURIComponent(getUrlParams("url"));
 }
 if (newUrl) {
